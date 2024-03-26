@@ -7,14 +7,31 @@ console.log('Console log:');
 
 // variabler
 
-let age = 35;
-console.log (age);
-console.log (typeof age);
+//let age = 35;
 
-const race = "Human";
-console.log (race);
-console.log (typeof race);
+// = `${age}, ${race}!`;
+// (age + ' ' + race + !);
 
-const combo = `${age}, ${race}!`; // = age + ' ' + race + !;
-console.log (combo);
-console.log (typeof combo);
+// Regular Functions / Functions
+
+function greeting() {
+    console.log ("Dette er en funksjon");
+
+    const race = "Human";
+    const greet = "Welcome";
+
+    console.log (greet + ' ' + race);
+}
+
+greeting();
+
+// DOMM (Document Object Model Manipulation)
+
+// lagringsplass = lagrings innhold
+
+const greetingbutton = document.querySelector("#greetingbutton");
+
+greetingbutton.addEventListener("click", greeting)
+
+const darkmode = document.querySelector("#darkmodebutton")
+
