@@ -19,29 +19,25 @@ function greeting() {
 
    const race = "Human";
    const greet = "Welcome";
-
    console.log (greet + ' ' + race);
 }
 
 greeting();
 
+greetingbutton.addEventListener("click", greeting);
+
 // DOMM (Document Object Model Manipulation)
 
 // lagringsplass = lagrings innhold
 
-const greetingbutton = document.querySelector("#greetingbutton");
-
-greetingbutton.addEventListener("click", greeting);
-
-
-
+    //hent
 const darkmodebutton = document.querySelector("#darkmodebutton");
-
+    //modifiser
 function darkmode() {
+    //hent
     const body = document.querySelector("body");
-
+    //modifiser
     body.classList.toggle("dark");
 }
-
 
 darkmodebutton.addEventListener("click", darkmode)
