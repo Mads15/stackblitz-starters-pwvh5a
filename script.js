@@ -15,12 +15,12 @@ console.log('Console log:');
 // Regular Functions / Functions
 
 function greeting() {
-    console.log ("Dette er en funksjon");
+   console.log ("Dette er en funksjon");
 
-    const race = "Human";
-    const greet = "Welcome";
+   const race = "Human";
+   const greet = "Welcome";
 
-    console.log (greet + ' ' + race);
+   console.log (greet + ' ' + race);
 }
 
 greeting();
@@ -31,7 +31,17 @@ greeting();
 
 const greetingbutton = document.querySelector("#greetingbutton");
 
-greetingbutton.addEventListener("click", greeting)
+greetingbutton.addEventListener("click", greeting);
 
-const darkmode = document.querySelector("#darkmodebutton")
 
+
+const darkmodebutton = document.querySelector("#darkmodebutton");
+
+function darkmode() {
+    const body = document.querySelector("body");
+
+    body.classList.toggle("dark");
+}
+
+
+darkmodebutton.addEventListener("click", darkmode)
